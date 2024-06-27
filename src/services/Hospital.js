@@ -10,3 +10,20 @@ class Hospital{
         
     }
 }
+
+//Método para o paciente
+cadastrarPaciente(paciente){
+    this.pacientes.push(paciente)
+}
+consultarPaciente(nome){
+    return this.pacientes.find(paciente=>paciente.nome === nome)
+}
+atualizarPaciente(nome, novosDados){
+    const paciente=this.consultarPaciente(nome)
+    if(paciente){
+        Object.assign(paciente, novosDados)
+    }
+}
+excluirPaciente(nome){
+    this.pacientes=this.pacientes.filter(paciente=>paciente.nome !== nome)
+}
