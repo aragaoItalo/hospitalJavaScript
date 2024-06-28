@@ -11,6 +11,8 @@ class Hospital{
     }
 }
 
+//CRUD p pacientes, funcionarios e internações
+
 //Método para o paciente
 cadastrarPaciente(paciente){
     this.pacientes.push(paciente)
@@ -26,4 +28,21 @@ atualizarPaciente(nome, novosDados){
 }
 excluirPaciente(nome){
     this.pacientes=this.pacientes.filter(paciente=>paciente.nome !== nome)
+}
+
+//Método para o Funcionário
+cadastrarFuncionario(funcionario){
+    this.funcionarios.push(funcionario)
+}
+consultarFuncionario(nome){
+    return this.funcionarios.find(funcionario=>funcionario.nome === nome)
+}
+atualizarFuncionario(nome, novosDados){
+    const funcionario=this.consultarFuncionario(nome)
+    if(funcionario){
+        Object.assign(funcionario, novosDados)
+    }
+}
+excluirPaciente(nome){
+    this.funcionarios=this.funcionarios.filter(funcionario=>funcionario.nome !== nome)
 }
