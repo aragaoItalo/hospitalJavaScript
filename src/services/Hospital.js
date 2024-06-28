@@ -61,3 +61,19 @@ atualizarInternacao(pacienteNome, novosDados){
 excluirInternacao(pacienteNome){
     this.internacoes=this.internacoes.filter(internacao=>internacao.paciente.nome !== pacienteNome)
 }
+
+
+// RELATÓRIOS
+
+gerarRelatorioPacientes(){
+    return this.pacientes
+}
+gerarRelatorioFuncionarios(){
+    return this.funcionarios
+}
+gerarRelatorioInternacoes(){
+    return this.internacoes
+}
+
+
+module.exports=Hospital
