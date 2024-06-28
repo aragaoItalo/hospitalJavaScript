@@ -8,4 +8,4 @@ class Funcionario extends Pessoa{
     }
 }
 
-module.exports=Funcionario
+module.exports=Funcionario;

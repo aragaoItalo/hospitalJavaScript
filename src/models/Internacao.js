@@ -8,4 +8,4 @@ class Internacao{
     }
 }
 
-module.exports=Internacao
+module.exports=Internacao;

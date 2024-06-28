@@ -65,15 +65,15 @@ excluirInternacao(pacienteNome){
 
 // RELATÓRIOS
 
-gerarRelatorioPacientes(){
+relatorioPacientes(){
     return this.pacientes
 }
-gerarRelatorioFuncionarios(){
+relatorioFuncionarios(){
     return this.funcionarios
 }
-gerarRelatorioInternacoes(){
+relatorioInternacoes(){
     return this.internacoes
 }
 
 
-module.exports=Hospital
+module.exports=Hospital;
