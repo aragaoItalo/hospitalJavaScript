@@ -1,4 +1,4 @@
-const Hospital=require('../src/services/Hospital')
+const hospital=require('../src/services/Hospital')
 
 function relatorioPacientes(hospital) {
     const pacientes=hospital.relatorioPacientes()

@@ -1,6 +1,6 @@
-const Pessoa=require('./Pessoa')
+const pessoa=require('./Pessoa')
 
-class Funcionario extends Pessoa{
+class funcionario extends pessoa{
     constructor(nome, dtNascimento, endereco, especialidade, funcao){
         super(nome, dtNascimento, endereco)
         this.especialidade=especialidade
@@ -8,4 +8,4 @@ class Funcionario extends Pessoa{
     }
 }
 
-module.exports=Funcionario;
+module.exports=funcionario;

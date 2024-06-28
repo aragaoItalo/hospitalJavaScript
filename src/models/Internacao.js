@@ -1,4 +1,4 @@
-class Internacao{
+class internacao{
     constructor(paciente, dtInternacao, dtAlta, leitoOcupado, procedimentoRealizado){
         this.paciente=paciente
         this.dtInternacao=dtInternacao
@@ -8,4 +8,4 @@ class Internacao{
     }
 }
 
-module.exports=Internacao;
+module.exports=internacao;

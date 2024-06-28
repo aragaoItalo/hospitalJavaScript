@@ -1,5 +1,5 @@
 //Classe base
-class Pessoa {
+class pessoa {
     constructor (nome, dtNascimento, endereco){
         this.nome=nome
         this.dtNascimento=dtNascimento
@@ -7,7 +7,7 @@ class Pessoa {
     }
 }
 
-module.exports=Pessoa;
+module.exports=pessoa;
 
 //module.exports utilizado para exportar classes
 //exports utilizado para obj e funcoes 

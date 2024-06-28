@@ -1,6 +1,6 @@
-const Pessoa=require('./Pessoa')
+const pessoa=require('./Pessoa')
 
-class Paciente extends Pessoa{
+class paciente extends pessoa{
     constructor(nome, dtNascimento, endereco, planoDeSaude){
     // método p chamar o construtor da classe herdada
     super(nome, endereco, dtNascimento)
@@ -8,4 +8,4 @@ class Paciente extends Pessoa{
     }
 }
 
-module.exports=Paciente;
+module.exports=paciente;
