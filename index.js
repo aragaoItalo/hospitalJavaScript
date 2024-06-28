@@ -22,10 +22,10 @@ hospital.cadastrarInternacao(internacao1);
 
 // Geração de Relatórios
 console.log("Relatório de Pacientes:");
-console.log(gerarRelatorioPacientes(hospital));
+console.log(relatorioPacientes(hospital));
 
 console.log("Relatório de Funcionários:");
-console.log(gerarRelatorioFuncionarios(hospital));
+console.log(relatorioFuncionarios(hospital));
 
 console.log("Relatório de Internações:");
-console.log(gerarRelatorioInternacoes(hospital));
+console.log(relatorioInternacoes(hospital));
