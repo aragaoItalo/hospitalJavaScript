@@ -43,6 +43,21 @@ atualizarFuncionario(nome, novosDados){
         Object.assign(funcionario, novosDados)
     }
 }
-excluirPaciente(nome){
+excluirFuncionario(nome){
     this.funcionarios=this.funcionarios.filter(funcionario=>funcionario.nome !== nome)
+}
+
+//Método para as Internações 
+cadastrarInternacao(internacao){
+    this.internacoes.push(internacao)
+}
+consultarInternacao(pacienteNome){
+    return this.internacoes.filter(internacao=>internacao.paciente.nome === pacienteNome)
+}
+atualizarInternacao(pacienteNome, novosDados){
+    const internacoes= this.consultarInternacao(pacienteNome)
+    internacoes.forEach(internacao=>Object.assign(internacao, novosDados));
+}
+excluirInternacao(pacienteNome){
+    this.internacoes=this.internacoes.filter(internacao=>internacao.paciente.nome !== pacienteNome)
 }
